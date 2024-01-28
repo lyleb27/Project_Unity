@@ -10,6 +10,8 @@ public class CoinCollider : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("+1 piece detruis l'objet");
+
+            Destroy(gameObject);
         }
     }
 }

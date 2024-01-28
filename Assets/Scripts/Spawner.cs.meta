@@ -1,2 +1,15 @@
 fileFormatVersion: 2
 guid: 179c477837d91a64ca4f605a67e00fba
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - TrapPrefab: {fileID: 6805788841232574972, guid: 4fd9f7b6685917a43b812487fedfa40a, type: 3}
+  - CoinPrefab: {fileID: 7573008396467521217, guid: 208a8fbaf2dbfca48a8cfd5fbbe0c01e, type: 3}
+  - MobPrefab: {fileID: 5169784423935818806, guid: 9969a1c1783477f408ff019c8b721481, type: 3}
+  - UpgradePrefab: {fileID: 8410675973663778992, guid: 1744fe2ea886128448163098ca2c40e7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

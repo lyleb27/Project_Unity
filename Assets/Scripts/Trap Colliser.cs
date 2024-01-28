@@ -13,6 +13,7 @@ public class TrapCollider : MonoBehaviour
             SceneManager.LoadScene("Menu");
         }
         Destroy(other.gameObject);
+/*        OnTrapDestroyed(gameObject);*/
         Destroy(gameObject);
     }
 }

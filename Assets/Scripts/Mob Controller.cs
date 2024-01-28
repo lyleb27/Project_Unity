@@ -24,7 +24,11 @@ public class MobController : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         Debug.Log("Trigger");
-        if (collision.gameObject.tag == "Player")
+        // recupérer le game object qui contient ton script dans ton editeur (quand tu es en jeu)
+        // Recupéerer le component (script) qui est contenu dans le game object
+        // appeler la méthode du component (script)
+/*        OnMobDestroyed(gameObject);
+*/        if (collision.gameObject.tag == "Player")
         {
             Destroy(collision.gameObject);
         }
