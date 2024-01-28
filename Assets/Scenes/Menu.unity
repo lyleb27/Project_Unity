@@ -293,6 +293,7 @@ GameObject:
   - component: {fileID: 399339009}
   - component: {fileID: 399339011}
   - component: {fileID: 399339010}
+  - component: {fileID: 399339012}
   m_Layer: 5
   m_Name: Temps
   m_TagString: Untagged
@@ -361,6 +362,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 399339008}
   m_CullTransparentMesh: 1
+--- !u!114 &399339012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399339008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777d1abc629e278469882c166760b19b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuTimeText: {fileID: 399339010}
 --- !u!1 &440313907
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +386,7 @@ GameObject:
   - component: {fileID: 440313908}
   - component: {fileID: 440313910}
   - component: {fileID: 440313909}
+  - component: {fileID: 440313911}
   m_Layer: 5
   m_Name: "Pi\xE8ces"
   m_TagString: Untagged
@@ -440,6 +455,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 440313907}
   m_CullTransparentMesh: 1
+--- !u!114 &440313911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440313907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e34f392857c6f4791487f4b684892b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuCoinCountText: {fileID: 440313909}
 --- !u!1 &812371444
 GameObject:
   m_ObjectHideFlags: 0

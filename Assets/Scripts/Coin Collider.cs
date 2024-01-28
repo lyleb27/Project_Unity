@@ -7,11 +7,21 @@ public class CoinCollider : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("+1 piece detruis l'objet");
-
+            // Détruire l'objet
             Destroy(gameObject);
+
+            // Appeler la méthode IncrementCoinCount du script CoinManager
+            CoinManager coinManager = FindObjectOfType<CoinManager>();
+            if (coinManager != null)
+            {
+                coinManager.IncrementCoinCount();
+            }
+            else
+            {
+                Debug.LogWarning("CoinManager not found in the scene.");
+            }
         }
     }
 }

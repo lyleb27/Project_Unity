@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MobController : MonoBehaviour
 {
@@ -24,13 +25,14 @@ public class MobController : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         Debug.Log("Trigger");
-        // recupérer le game object qui contient ton script dans ton editeur (quand tu es en jeu)
-        // Recupéerer le component (script) qui est contenu dans le game object
-        // appeler la méthode du component (script)
+        // recupï¿½rer le game object qui contient ton script dans ton editeur (quand tu es en jeu)
+        // Recupï¿½erer le component (script) qui est contenu dans le game object
+        // appeler la mï¿½thode du component (script)
 /*        OnMobDestroyed(gameObject);
 */        if (collision.gameObject.tag == "Player")
         {
             Destroy(collision.gameObject);
+            SceneManager.LoadScene("Menu");
         }
     }
 }
