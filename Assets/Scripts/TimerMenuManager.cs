@@ -7,10 +7,8 @@ public class TimerMenuManager : MonoBehaviour
 
     void Start()
     {
-        // Récupérer le temps écoulé depuis PlayerPrefs
         float tempsÉcoulé = PlayerPrefs.GetFloat("TempsÉcoulé", 0.0f);
 
-        // Mettre à jour le texte
         menuTimeText.text = "Temps écoulé : " + tempsÉcoulé.ToString("F1") + "s";
     }
 }

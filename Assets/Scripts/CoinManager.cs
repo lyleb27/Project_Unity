@@ -8,10 +8,8 @@ public class CoinManager : MonoBehaviour
 
     void Start()
     {
-        // Charger le nombre de pièces collectées depuis PlayerPrefs
         coinCount = 0;
 
-        // Mettre à jour le texte
         UpdateCoinCountText();
     }
 
@@ -19,11 +17,9 @@ public class CoinManager : MonoBehaviour
     {
         coinCount++;
 
-        // Enregistrer le nouveau nombre de pièces dans PlayerPrefs
         PlayerPrefs.SetInt("CoinCount", coinCount);
         PlayerPrefs.Save();
 
-        // Mettre à jour le texte
         UpdateCoinCountText();
     }
 
@@ -34,14 +30,11 @@ public class CoinManager : MonoBehaviour
 
     public void ResetCoinCount()
     {
-        // Réinitialiser le nombre de pièces à zéro
         coinCount = 0;
 
-        // Enregistrer la réinitialisation dans PlayerPrefs
         PlayerPrefs.SetInt("CoinCount", coinCount);
         PlayerPrefs.Save();
 
-        // Mettre à jour le texte
         UpdateCoinCountText();
     }
 }

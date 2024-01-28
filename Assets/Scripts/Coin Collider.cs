@@ -9,10 +9,8 @@ public class CoinCollider : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Détruire l'objet
             Destroy(gameObject);
 
-            // Appeler la méthode IncrementCoinCount du script CoinManager
             CoinManager coinManager = FindObjectOfType<CoinManager>();
             if (coinManager != null)
             {

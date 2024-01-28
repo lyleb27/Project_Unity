@@ -8,10 +8,8 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
-        // Charger le temps écoulé depuis PlayerPrefs
         tempsÉcoulé = 0;
 
-        // Mettre à jour le texte
         UpdateTimeText();
     }
 
@@ -19,11 +17,9 @@ public class Timer : MonoBehaviour
     {
         tempsÉcoulé += Time.deltaTime;
 
-        // Enregistrer le temps écoulé dans PlayerPrefs
         PlayerPrefs.SetFloat("TempsÉcoulé", tempsÉcoulé);
         PlayerPrefs.Save();
 
-        // Mettre à jour le texte
         UpdateTimeText();
     }
 
@@ -34,14 +30,11 @@ public class Timer : MonoBehaviour
 
     public void ResetTime()
     {
-        // Réinitialiser le temps à zéro
         tempsÉcoulé = 0.0f;
 
-        // Enregistrer la réinitialisation dans PlayerPrefs
         PlayerPrefs.SetFloat("TempsÉcoulé", tempsÉcoulé);
         PlayerPrefs.Save();
 
-        // Mettre à jour le texte
         UpdateTimeText();
     }
 }
