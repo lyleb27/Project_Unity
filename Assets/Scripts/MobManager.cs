@@ -3,17 +3,29 @@ using UnityEngine.UI;
 
 public class MobManager : MonoBehaviour
 {
-    private int mobCount = 0;
-    public Text mobCountText;
+    private int monstersKilled = 0;
+    public Text monstersKilledText;
 
     void Start()
     {
-        mobCountText.text = "Ennemis tués : ";
+        monstersKilled = 0;
+        UpdateMonsterCounterText();
     }
 
-    public void IncrementMobCount()
+    public void IncrementMonsterCounter()
     {
-        mobCount++;
-        mobCountText.text = "Ennemis tués : " + mobCount.ToString();
+        monstersKilled++;
+        UpdateMonsterCounterText();
+    }
+
+    void UpdateMonsterCounterText()
+    {
+        monstersKilledText.text = "Monstres tués : " + monstersKilled.ToString();
+    }
+
+    public void ResetMonsterCounter()
+    {
+        monstersKilled = 0;
+        UpdateMonsterCounterText();
     }
 }
